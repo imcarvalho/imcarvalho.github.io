@@ -1,0 +1,53 @@
+/** colors */
+$header-bg: #89c6c8;
+$header-fg: #fff;
+$content-color: #fff;
+
+/** dimensions */
+$default-padding: 20px;
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $content-color;
+  font-family: 'Lato', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  font-size: 3em;
+  font-family: 'Pacifico', 'Lato', sans-serif;
+  text-align: center;
+  background-color: $header-bg;
+  color: $header-fg;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  &-column {
+    text-align: center;
+    box-sizing: border-box;
+    padding: $default-padding;
+    width: 33%;
+  }
+}
+
+.footer {
+  flex-shrink: 0;
+  padding: $default-padding;
+  background-color: $header-bg;
+  color: $header-fg;
+}

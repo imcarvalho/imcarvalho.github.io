@@ -1,0 +1,23 @@
+{
+  "name": "imcarvalho.github.io",
+  "version": "1.0.0",
+  "description": "Personal page for @imcarvalho",
+  "main": "index.html",
+  "dependencies": {
+    "node-sass": "^4.13.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "scss": "node-sass -w scss/ -o assets/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imcarvalho/imcarvalho.github.io.git"
+  },
+  "author": "imcarvalho",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/imcarvalho/imcarvalho.github.io/issues"
+  },
+  "homepage": "https://github.com/imcarvalho/imcarvalho.github.io#readme"
+}
