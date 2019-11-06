@@ -1,16 +1,18 @@
 /** colors */
 /** dimensions */
+/** misc */
 html,
 body {
   height: 100%;
   margin: 0;
-  padding: 0; }
-
-body {
+  padding: 0;
   background-color: #fff;
   font-family: 'Lato', sans-serif;
   display: flex;
   flex-direction: column; }
+
+.Content {
+  flex: 1 0 auto; }
 
 header {
   background-color: #66a7b8;
@@ -29,32 +31,50 @@ h1 {
 h2 {
   margin: 0; }
 
-.content {
-  flex: 1 0 auto; }
-
-.avatar {
+.Avatar {
   border-radius: 50%;
   border: 10px #fff solid;
   max-width: 200px;
-  margin: auto; }
+  margin: auto;
+  transition: all 2s; }
+  .Avatar:hover {
+    max-width: 220px; }
 
-.container {
+.Container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
   color: #162020; }
-  .container-column {
+  .Container-column {
     text-align: center;
     box-sizing: border-box;
     padding: 20px;
     width: 33%; }
     @media (max-width: 768px) {
-      .container-column {
+      .Container-column {
         width: 100%; } }
 
-.footer {
+footer {
+  display: flex;
+  flex-direction: row;
   flex-shrink: 0;
   padding: 20px;
   background-color: #66a7b8;
-  color: #fff; }
+  color: #fff;
+  line-height: 24px; }
+
+.LinkList {
+  margin: 0;
+  list-style: none; }
+  .LinkList-item {
+    padding-right: 20px;
+    display: inline; }
+    .LinkList-item-link {
+      text-decoration: none; }
+      .LinkList-item-link-icon {
+        width: 24px;
+        fill: #fff;
+        transition: all 2s; }
+        .LinkList-item-link-icon:hover {
+          fill: #FFEB00; }
