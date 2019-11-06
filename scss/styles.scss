@@ -78,6 +78,10 @@ h3 {
     &-text {
       text-align: left;
       padding-bottom: $default-padding;
+
+      @include md {
+        padding-bottom: 0;
+      }
     }
 
     &-link {

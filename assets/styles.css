@@ -64,6 +64,9 @@ h3 {
     .Container-column-text {
       text-align: left;
       padding-bottom: 20px; }
+      @media (max-width: 768px) {
+        .Container-column-text {
+          padding-bottom: 0; } }
     .Container-column-link {
       font-weight: bold;
       text-decoration: none;
