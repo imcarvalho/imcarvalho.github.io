@@ -35,10 +35,7 @@ h2 {
   border-radius: 50%;
   border: 10px #fff solid;
   max-width: 200px;
-  margin: auto;
-  transition: all 1s; }
-  .Avatar:hover {
-    max-width: 220px; }
+  margin: auto; }
 
 h3 {
   margin-top: 0;
@@ -66,7 +63,7 @@ h3 {
     .Container-column-link {
       font-weight: bold;
       text-decoration: none;
-      transition: all 1s;
+      transition: color 1s;
       color: #42798f; }
       .Container-column-link:visited {
         color: #42798f; }
@@ -96,7 +93,7 @@ footer {
     display: inline; }
     .LinkList-item-link {
       text-decoration: none;
-      transition: all 1s;
+      transition: color 1s;
       fill: #fff; }
       .LinkList-item-link-icon {
         width: 24px;
