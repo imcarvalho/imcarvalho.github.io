@@ -78,24 +78,24 @@ footer {
 }
 
 .LinkList {
-margin: 0;
-list-style: none;
+  margin: 0;
+  list-style: none;
 
   &-item {
-  padding-right: $default-padding;
-  display: inline;
+    padding-right: $default-padding;
+    display: inline;
 
-    &-link{
+    &-link {
       text-decoration: none;
+      transition: $default-transition;
+      fill: $header-fg;
+
+      &:hover {
+        fill: $accent-color;
+      }
 
       &-icon {
         width: 24px;
-        fill: $header-fg;
-        transition: $default-transition;
-
-        &:hover {
-          fill: $accent-color
-        }
       }
     }
   }
