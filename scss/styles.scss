@@ -33,7 +33,7 @@ h1 {
 }
 
 h2 {
-  margin: 0;
+  margin-top: 0;
 }
 
 .Avatar {
@@ -113,10 +113,11 @@ footer {
 
 .LinkList {
   margin: 0;
+  padding: 0;
   list-style: none;
 
   &-item {
-    padding-right: $default-padding;
+    padding: $default-padding;
     display: inline;
 
     &-link {
@@ -124,12 +125,18 @@ footer {
       transition: $default-transition;
       fill: $header-fg;
 
-      &:hover {
-        fill: $accent-color;
-      }
-
       &-icon {
         width: 24px;
+        transition: width 1s;
+
+        &:hover {
+          width: 50px;
+        }
+
+        @include md {
+          width: 40px;
+          margin-top: 20px;
+        }
       }
     }
   }
