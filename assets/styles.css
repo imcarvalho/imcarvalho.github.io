@@ -67,13 +67,16 @@ h3 {
       font-weight: bold;
       text-decoration: none;
       transition: all 1s;
-      color: #27515a; }
+      color: #66a7b8; }
       .Container-column-link:visited {
-        color: #27515a; }
+        color: #66a7b8; }
       .Container-column-link:hover {
         color: #b3a500; }
     .Container-column-list {
       text-align: left; }
+    .Container-column-listIcon {
+      height: 1em;
+      vertical-align: middle; }
 
 footer {
   display: flex;

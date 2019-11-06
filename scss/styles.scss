@@ -83,10 +83,10 @@ h3 {
       font-weight: bold;
       text-decoration: none;
       transition: $default-transition;
-      color: $content-fg;
+      color: $link-fg;
 
       &:visited {
-        color: $content-fg;
+        color: $link-fg;
       }
 
       &:hover {
@@ -96,6 +96,11 @@ h3 {
 
     &-list {
       text-align: left;
+    }
+
+    &-listIcon {
+      height: 1em;
+      vertical-align: middle;
     }
   }
 }
