@@ -48,6 +48,11 @@ h2 {
   }
 }
 
+h3 {
+  margin-top: 0;
+  font-size: 2em;
+}
+
 .Container {
   display: flex;
   flex-direction: row;
@@ -59,10 +64,39 @@ h2 {
     text-align: center;
     box-sizing: border-box;
     padding: $default-padding;
+    line-height: 2em;
     width: 33%;
 
     @include md {
       width: 100%;
+    }
+
+    &-icon {
+      height: 50px;
+    }
+
+    &-text {
+      text-align: left;
+      padding-bottom: $default-padding;
+    }
+
+    &-link {
+      font-weight: bold;
+      text-decoration: none;
+      transition: $default-transition;
+      color: $content-fg;
+
+      &:visited {
+        color: $content-fg;
+      }
+
+      &:hover {
+        color: darken($accent-color, 15%);
+      }
+    }
+
+    &-list {
+      text-align: left;
     }
   }
 }

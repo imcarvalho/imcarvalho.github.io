@@ -40,20 +40,41 @@ h2 {
   .Avatar:hover {
     max-width: 220px; }
 
+h3 {
+  margin-top: 0;
+  font-size: 2em; }
+
 .Container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  color: #162020; }
+  color: #27515a; }
   .Container-column {
     text-align: center;
     box-sizing: border-box;
     padding: 20px;
+    line-height: 2em;
     width: 33%; }
     @media (max-width: 768px) {
       .Container-column {
         width: 100%; } }
+    .Container-column-icon {
+      height: 50px; }
+    .Container-column-text {
+      text-align: left;
+      padding-bottom: 20px; }
+    .Container-column-link {
+      font-weight: bold;
+      text-decoration: none;
+      transition: all 1s;
+      color: #27515a; }
+      .Container-column-link:visited {
+        color: #27515a; }
+      .Container-column-link:hover {
+        color: #b3a500; }
+    .Container-column-list {
+      text-align: left; }
 
 footer {
   display: flex;
