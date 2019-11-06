@@ -1,10 +1,5 @@
-/** colors */
-$header-bg: #89c6c8;
-$header-fg: #fff;
-$content-color: #fff;
-
-/** dimensions */
-$default-padding: 20px;
+@import './_variables';
+@import './_mixins';
 
 html,
 body {
@@ -14,34 +9,58 @@ body {
 }
 
 body {
-  background-color: $content-color;
+  background-color: $content-bg;
   font-family: 'Lato', sans-serif;
   display: flex;
   flex-direction: column;
 }
 
 header {
-  font-size: 3em;
-  font-family: 'Pacifico', 'Lato', sans-serif;
-  text-align: center;
   background-color: $header-bg;
   color: $header-fg;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: $default-padding;
+}
+
+h1 {
+  font-size: 3em;
+  font-family: 'Pacifico', 'Lato', sans-serif;
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
 }
 
 .content {
   flex: 1 0 auto;
 }
 
+.avatar {
+  border-radius: 50%;
+  border: 10px $header-fg solid;
+  max-width: 200px;
+  margin: auto;
+}
+
 .container {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
+  color: $content-fg;
   &-column {
     text-align: center;
     box-sizing: border-box;
     padding: $default-padding;
     width: 33%;
+
+    @include md {
+      width: 100%;
+    }
   }
 }
 
