@@ -43,9 +43,9 @@ h2 {
       fill: #fff; }
       .LinkList-item-link-icon {
         width: 24px;
-        transition: width 1s; }
+        transition: transform 1s; }
         .LinkList-item-link-icon:hover {
-          width: 50px; }
+          transform: scale(1.5); }
         @media (max-width: 768px) {
           .LinkList-item-link-icon {
             width: 40px;

@@ -51,10 +51,10 @@ h2 {
 
       &-icon {
         width: 24px;
-        transition: width $transition-length;
+        transition: transform $transition-length;
 
         &:hover {
-          width: 50px;
+          transform: scale(1.5);
         }
 
         @include md {
