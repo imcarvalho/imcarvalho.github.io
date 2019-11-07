@@ -100,16 +100,6 @@ h3 {
   }
 }
 
-footer {
-  display: flex;
-  flex-direction: row;
-  flex-shrink: 0;
-  padding: $default-padding;
-  background-color: $header-bg;
-  color: $header-fg;
-  line-height: 24px;
-}
-
 .LinkList {
   margin: 0;
   padding: 0;
