@@ -3,17 +3,10 @@
 
 html,
 body {
-  height: 100%;
   margin: 0;
   padding: 0;
   background-color: $content-bg;
   font-family: 'Lato', sans-serif;
-  display: flex;
-  flex-direction: column;
-}
-
-.Content {
-  flex: 1 0 auto;
 }
 
 header {
@@ -21,7 +14,6 @@ header {
   color: $header-fg;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   text-align: center;
   padding: $default-padding;
 }
@@ -67,7 +59,7 @@ h2 {
 
         @include md {
           width: 40px;
-          margin-top: 20px;
+          margin-top: $default-padding;
         }
       }
     }

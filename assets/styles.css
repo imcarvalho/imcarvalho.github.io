@@ -3,23 +3,16 @@
 /** misc */
 html,
 body {
-  height: 100%;
   margin: 0;
   padding: 0;
   background-color: #fff;
-  font-family: 'Lato', sans-serif;
-  display: flex;
-  flex-direction: column; }
-
-.Content {
-  flex: 1 0 auto; }
+  font-family: 'Lato', sans-serif; }
 
 header {
   background-color: #66a7b8;
   color: #fff;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   text-align: center;
   padding: 20px; }
 
