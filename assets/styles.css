@@ -34,8 +34,29 @@ h2 {
 .Avatar {
   border-radius: 50%;
   border: 10px #fff solid;
-  max-width: 200px;
+  width: 200px;
   margin: auto; }
+
+.LinkList {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .LinkList-item {
+    padding: 20px;
+    display: inline; }
+    .LinkList-item-link {
+      text-decoration: none;
+      transition: color 1s;
+      fill: #fff; }
+      .LinkList-item-link-icon {
+        width: 24px;
+        transition: width 1s; }
+        .LinkList-item-link-icon:hover {
+          width: 50px; }
+        @media (max-width: 768px) {
+          .LinkList-item-link-icon {
+            width: 40px;
+            margin-top: 20px; } }
 
 h3 {
   margin-top: 0;
@@ -74,24 +95,3 @@ h3 {
     .Container-column-listIcon {
       height: 1em;
       vertical-align: middle; }
-
-.LinkList {
-  margin: 0;
-  padding: 0;
-  list-style: none; }
-  .LinkList-item {
-    padding: 20px;
-    display: inline; }
-    .LinkList-item-link {
-      text-decoration: none;
-      transition: color 1s;
-      fill: #fff; }
-      .LinkList-item-link-icon {
-        width: 24px;
-        transition: width 1s; }
-        .LinkList-item-link-icon:hover {
-          width: 50px; }
-        @media (max-width: 768px) {
-          .LinkList-item-link-icon {
-            width: 40px;
-            margin-top: 20px; } }

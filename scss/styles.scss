@@ -39,8 +39,39 @@ h2 {
 .Avatar {
   border-radius: 50%;
   border: 10px $header-fg solid;
-  max-width: $avatar-size;
+  width: 200px;
   margin: auto;
+}
+
+.LinkList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &-item {
+    padding: $default-padding;
+    display: inline;
+
+    &-link {
+      text-decoration: none;
+      transition: color $transition-length;
+      fill: $header-fg;
+
+      &-icon {
+        width: 24px;
+        transition: width $transition-length;
+
+        &:hover {
+          width: 50px;
+        }
+
+        @include md {
+          width: 40px;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
 }
 
 h3 {
@@ -96,37 +127,6 @@ h3 {
     &-listIcon {
       height: 1em;
       vertical-align: middle;
-    }
-  }
-}
-
-.LinkList {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-
-  &-item {
-    padding: $default-padding;
-    display: inline;
-
-    &-link {
-      text-decoration: none;
-      transition: color $transition-length;
-      fill: $header-fg;
-
-      &-icon {
-        width: 24px;
-        transition: width $transition-length;
-
-        &:hover {
-          width: 50px;
-        }
-
-        @include md {
-          width: 40px;
-          margin-top: 20px;
-        }
-      }
     }
   }
 }
