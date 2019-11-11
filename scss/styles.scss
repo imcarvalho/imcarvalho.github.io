@@ -48,6 +48,7 @@ h2 {
       text-decoration: none;
       transition: color $transition-length;
       fill: $header-fg;
+      outline-color: darken($header-fg, 70%);
 
       &-icon {
         width: 24px;
