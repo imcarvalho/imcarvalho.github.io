@@ -22,7 +22,7 @@ h1 {
   margin: 0; }
 
 h2 {
-  margin-top: 0; }
+  margin: 0; }
 
 .Avatar {
   border-radius: 50%;
@@ -30,62 +30,19 @@ h2 {
   width: 200px;
   margin: auto; }
 
-.LinkList {
-  margin: 0;
-  padding: 0;
-  list-style: none; }
-  .LinkList-item {
-    padding: 20px;
-    display: inline; }
-    .LinkList-item-link {
-      text-decoration: none;
-      transition: color 1s;
-      fill: #fff;
-      outline-color: #4d4d4d; }
-      .LinkList-item-link-icon {
-        width: 24px;
-        transition: transform 1s; }
-        .LinkList-item-link-icon:hover {
-          transform: scale(1.5); }
-        @media (max-width: 768px) {
-          .LinkList-item-link-icon {
-            width: 40px;
-            margin-top: 20px; } }
-
-h3 {
-  margin-top: 0;
-  font-size: 2em; }
-
 .Container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  color: #27515a; }
-  .Container-column {
-    text-align: center;
-    box-sizing: border-box;
-    padding: 20px;
-    line-height: 2em;
-    width: 33%; }
-    @media (max-width: 768px) {
-      .Container-column {
-        width: 100%; } }
-    .Container-column-icon {
-      height: 50px; }
-    .Container-column-text {
-      text-align: left; }
-    .Container-column-link {
-      font-weight: bold;
-      text-decoration: none;
-      transition: color 1s;
+  color: #27515a;
+  padding: 20px; }
+  .Container-link {
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 1s;
+    color: #42798f; }
+    .Container-link:visited {
       color: #42798f; }
-      .Container-column-link:visited {
-        color: #42798f; }
-      .Container-column-link:hover {
-        color: #b3a500; }
-    .Container-column-list {
-      text-align: left; }
-    .Container-column-listIcon {
-      height: 1em;
-      vertical-align: middle; }
+    .Container-link:hover {
+      color: #b3a500; }
