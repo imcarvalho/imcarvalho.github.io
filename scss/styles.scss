@@ -25,7 +25,7 @@ h1 {
 }
 
 h2 {
-  margin: 0;
+  margin-top: 0;
 }
 
 .Avatar {
@@ -35,26 +35,91 @@ h2 {
   margin: auto;
 }
 
+.LinkList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &-item {
+    padding: $default-padding;
+    display: inline;
+
+    &-link {
+      text-decoration: none;
+      transition: color $transition-length;
+      fill: $header-fg;
+      outline-color: darken($header-fg, 70%);
+
+      &-icon {
+        width: 24px;
+        transition: transform $transition-length;
+
+        &:hover {
+          transform: scale(1.5);
+        }
+
+        @include md {
+          width: 40px;
+          margin-top: $default-padding;
+        }
+      }
+    }
+  }
+}
+
+h3 {
+  margin-top: 0;
+  font-size: 2em;
+}
+
 .Container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
   color: $content-fg;
-  padding: $default-padding;
 
-  &-link {
-    font-weight: bold;
-    text-decoration: none;
-    transition: color $transition-length;
-    color: $link-fg;
+  &-column {
+    text-align: center;
+    box-sizing: border-box;
+    padding: $default-padding;
+    line-height: 2em;
+    width: 33%;
 
-    &:visited {
-      color: $link-fg;
+    @include md {
+      width: 100%;
     }
 
-    &:hover {
-      color: darken($accent-color, 15%);
+    &-icon {
+      height: 50px;
+    }
+
+    &-text {
+      text-align: left;
+    }
+
+    &-link {
+      font-weight: bold;
+      text-decoration: none;
+      transition: color $transition-length;
+      color: $link-fg;
+
+      &:visited {
+        color: $link-fg;
+      }
+
+      &:hover {
+        color: darken($accent-color, 15%);
+      }
+    }
+
+    &-list {
+      text-align: left;
+    }
+
+    &-listIcon {
+      height: 1em;
+      vertical-align: middle;
     }
   }
 }
